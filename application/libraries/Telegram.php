@@ -15,7 +15,7 @@ class Telegram
     public function sendChat($message = '', $chatId = '5031465184')
     {
         //$this->load->helper('telegram');
-        $apiToken = '6315336303:AAFzlHry1JRRVlfsgdo-bNAuL1Xg_lWiado';
+        $apiToken = $_ENV['TELEGRAM_TOKEN'];
         $bot = new \TelegramBot\Api\BotApi($apiToken);
 
         if ($message) {
