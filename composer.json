@@ -1,0 +1,21 @@
+{
+   "require": {
+        "phpmailer/phpmailer": "^6.6",
+        "phpoffice/phpspreadsheet": "^1.23",
+        "chriskacerguis/codeigniter-restserver": "^3.1",
+        "guzzlehttp/guzzle": "^7.4",
+        "xendit/xendit-php": "^2.17",
+        "psr/log": "^1.1.4",
+        "laminas/laminas-httphandlerrunner": "^2.1",
+        "league/oauth2-google": "^4.0",
+        "firebase/php-jwt": "^6.2",
+        "symfony/deprecation-contracts": "^2.5.2",
+        "symfony/dotenv": "5.4",
+        "telegram-bot/api": "^2.4"
+    },
+    "config": {
+        "platform": {
+            "php": "7.4.33"
+         }
+   }
+}

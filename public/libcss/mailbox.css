@@ -1,0 +1,26 @@
+ table.dataTable tbody td {
+      vertical-align: middle;
+
+    }
+
+   table.dataTable tbody tr:hover  {
+        border: 5px;
+        cursor: pointer;
+        -moz-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+        -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+        box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+        transition:  0.2s ease-in-out;
+    }
+    
+    
+   table.dataTable tbody tr:hover td:after {
+        content: "";
+        width: 5px;
+        height: 100%;
+        background-color: #f8f9fa;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 5;
+        transition: all 0.2s ease-in-out;
+    }

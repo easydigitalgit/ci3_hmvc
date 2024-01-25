@@ -1,0 +1,15 @@
+.modal.bigBox .modal-dialog {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  max-width: none; }
+
+.modal.bigBox .modal-content {
+  height: auto;
+  height: 100vh;
+  border-radius: 0;
+  border: none; }
+
+.modal.bigBox .modal-body {
+  overflow-y: auto; }

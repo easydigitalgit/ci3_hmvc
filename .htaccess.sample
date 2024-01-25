@@ -1,0 +1,22 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+  
+    RewriteRule ^(.*)$ /index.php/$1 [L]
+# Hide a specific file
+
+    <Files ~ "\.(env|config.js|md|gitignore|gitattributes|lock|sample)$">
+        Order allow,deny
+        Deny from all
+    </Files>
+    
+
+
+</IfModule>
+
+<IfModule mod_env.c>
+    #SetEnv CI_ENV production
+    SetEnv CI_ENV development
+</IfModule>
