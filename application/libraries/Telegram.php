@@ -12,7 +12,7 @@ class Telegram
         $this->ci = &get_instance();
     }
 
-    public function sendChat($message = '', $chatId = '5031465184')
+    public function sendChat($message = '', $chatId = '')
     {
         //$this->load->helper('telegram');
         $apiToken = $_ENV['TELEGRAM_TOKEN'];
